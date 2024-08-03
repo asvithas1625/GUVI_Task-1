@@ -1,0 +1,244 @@
+
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('nature-images.webp') no-repeat center center fixed;
+  background-size: cover;
+}
+
+// Common container style for register, login, and profile pages
+.container {
+  background: rgb(184, 225, 234);
+  width: 450px;
+  padding: 2rem;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+// Common heading style for register and login pages
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f2f2f2;
+  margin-bottom: 1.5rem;
+}
+
+// Form group styles
+.form-group {
+  margin-bottom: 1.5rem;
+
+  label {
+    color: #333;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .input-container {
+    margin-top: 0.5rem;
+
+    input,
+    select {
+      width: 100%;
+      background-color: #f9f9f9;
+      border: 1px solid #101010;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 16px;
+      transition: border 0.3s ease, background-color 0.3s ease;
+
+      &:focus {
+        border: 1px solid #5cb85c;
+        background-color: #fff;
+        outline: none;
+      }
+    }
+  }
+}
+
+// Button styles (for register, login, update profile, and logout)
+.btn {
+  font-size: 1.2rem;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background: #5cb85c;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin: 0 auto;
+  display: block;
+  width: 200px; // Adjust width as needed
+
+  &:hover {
+    background: #4cae4c;
+    transform: scale(1.05);
+  }
+}
+
+// Profile page specific styles
+.profile-container {
+  @extend .container;
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+  }
+
+  .profile-info {
+    margin-bottom: 2rem;
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .btn {
+      width: auto;
+      padding: 10px 20px;
+    }
+  }
+}
+
+// Additional styles (if needed)
+.center-text {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #0275d8;
+    text-decoration: none;
+
+    &:hover {
+      color: #025aa5;
+      text-decoration: underline;
+    }
+  }
+}
+
+.or {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+.icons {
+  text-align: center;
+  margin-top: 1rem;
+
+  i {
+    color: #0275d8;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #d9e3f0;
+    margin: 0 10px;
+    transition: background 0.3s ease, font-size 0.3s ease;
+
+    &:hover {
+      background: #f7f7f7;
+      font-size: 1.6rem;
+      border: 2px solid #0056b3;
+    }
+  }
+}
+
+// // Custom styles
+// body {
+//   background-color: $body-bg;
+//   color: $text-color;
+//   background-image: url('nature-images.webp'); // Replace with your image path
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+
+// h2 {
+//     color: #48bfda;
+// }
+
+// .form-container, .profile-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+// }
+
+// .card {
+//     width: 100%;
+//     max-width: 514px;
+//     margin-top: 20px;
+//     background-color: rgba(45, 45, 45, 0.8); // Adjust the opacity here
+//     color: #ffffff;
+//     border: none; // Remove border
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add box shadow for better appearance
+// }
+
+// .card-header {
+//     background-color: rgba(59, 59, 59, 0.8); // Adjust the opacity here
+//     border-bottom: none;
+// }
+
+// .card-header h2 {
+//     margin-bottom: 0;
+//     color: #56affe;
+// }
+
+// .card-footer {
+//     background-color: rgba(59, 59, 59, 0.8); // Adjust the opacity here
+//     border-top: none;
+//     margin-top: 20px;
+// }
+
+// .btn-primary {
+//     background-color: #50e3fa;
+//     border-color: #09ccf4;
+// }
+
+// .btn-primary:hover {
+//     background-color: #06d9e9;
+//     border-color: #09090b;
+// }
+
+// .btn-secondary {
+//     background-color: #90bbca;
+//     border-color: #81afbf;
+// }
+
+// .btn-secondary:hover {
+//     background-color: #b2bec3;
+//     border-color: #b2bec3;
+// }
+
+// .profile-details p {
+//     font-size: 1.2em;
+// }
+
+// .profile-details span {
+//     color: #0cbcf2;
+// }
